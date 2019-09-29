@@ -4,8 +4,13 @@
 }
 
 .inside #map-container {
-      display: none;
-  }
+    right: unset;
+    position: relative;
+    top: 125px;
+    height: 35vh;
+    width: 100%;
+    z-index: 1;
+}
 
 .inside #footer {
       display: none;
@@ -26,7 +31,7 @@
   #restaurant-cuisine, #restaurant-address {
       text-align: center;
   }
-  
+
   #restaurant-cuisine {
       margin: 0 auto;
   }
