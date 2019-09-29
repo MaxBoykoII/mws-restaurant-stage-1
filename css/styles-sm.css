@@ -1,0 +1,29 @@
+/* ====================== Restaurant Details ====================== */
+#breadcrumb {
+    width: 100%;
+}
+
+.inside #map-container {
+      display: none;
+  }
+
+.inside #footer {
+      display: none;
+  }
+
+  #restaurant-container, #reviews-container {
+      width: 100%;
+  }
+
+  #restaurant-hours {
+      margin: 0 auto;
+  }
+
+  #restaurant-cuisine, #restaurant-address {
+      text-align: center;
+  }
+
+  #reviews-list li p {
+    margin: 0 0 10px;
+    font-size: 1.15rem;
+  }
