@@ -288,3 +288,10 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+/* ====================== Utils ====================== */
+.hidden {
+  position: absolute;
+  left: -10000px;
+  overflow: hidden
+}
