@@ -1,3 +1,15 @@
+/* ====================== Restaurant Filtering ====================== */
+.filter-options {
+    width: 100%;
+    height: unset;
+    flex-direction: column;
+}
+
+.filter-options select {
+    margin-bottom: 5px;
+    width: 45%;
+}
+
 /* ====================== Restaurant Details ====================== */
 #breadcrumb {
     width: 100%;

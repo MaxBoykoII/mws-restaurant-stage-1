@@ -2,7 +2,7 @@
 /* CSS Document */
 
 :root {
-  font-size: calc(0.5em + 0.5vw);
+  font-size: calc(0.75em + 0.5vw);
   box-sizing: border-box;
 }
 
@@ -69,6 +69,7 @@ nav {
 nav h1 {
   margin: auto;
   padding: 1em;
+  font-size: 1rem;
 }
 nav h1 a {
   color: #fff;
@@ -139,9 +140,8 @@ nav h1 a {
   height: 35px;
   letter-spacing: 0;
   margin: 0 1em;
+  min-width: 200px;
   padding: 0 1em;
-  max-width: 200px;
-  width: 35%;
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -162,9 +162,11 @@ nav h1 a {
   font-family: Arial,sans-serif;
   margin: 0.5em auto;
   min-height: 380px;
-  padding: 0 30px 25px;
+  padding: 1.5em 2em;
   text-align: left;
   width: 270px;
+  display: flex;
+  flex-direction: column;
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
@@ -188,6 +190,11 @@ nav h1 a {
   margin: 0;
   font-size: 1.1rem;
 }
+
+#restaurants-list p:last-of-type {
+  margin-bottom: auto;
+}
+
 #restaurants-list li a {
   background-color: orange;
   border-bottom: 3px solid #eee;
