@@ -1,10 +1,13 @@
-const cacheVersion = 'restaurant-reviews-v1';
+const cacheRoot = 'restaurant-reviews';
+const cacheVersion = 'v3';
+const staticCacheName = `${cacheRoot}-${cacheVersion}`;
 
-console.log(`Running version ${cacheVersion}...`);
+console.log(`Using sw version ${staticCacheName}...`);
 
 self.addEventListener('install', event => {
+    console.log(`Opening cache for sw version ${staticCacheName}...`);
     event.waitUntil(
-        caches.open(cacheVersion).then((cache) =>
+        caches.open(staticCacheName).then((cache) =>
             cache.addAll([
                 '/',
                 'restaurant.html',
@@ -28,6 +31,21 @@ self.addEventListener('install', event => {
                 'img/10.jpg'
             ]))
             .catch(e => console.log('There was a problem opening the cache...', e)));
+});
+
+
+self.addEventListener('activate', event => {
+    console.log(`Activating sw version ${staticCacheName}...`);
+    event.waitUntil(
+        caches.keys().then(cacheNames =>
+            Promise.all(
+                cacheNames.filter(cacheName =>
+                    cacheName.startsWith(cacheRoot) &&
+                    cacheName !== staticCacheName)
+                    .map(cacheName => caches.delete(cacheName))
+            )
+        )
+    );
 });
 
 
