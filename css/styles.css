@@ -84,7 +84,7 @@ nav h1 a {
     background-color: #eee;
     font-size: 1.7rem;
     margin: 0;
-    width: calc(50% - 80px);
+    width: 50%;
 }
 
 /* Display list items side by side */

@@ -18,7 +18,7 @@
 .inside #map-container {
     right: unset;
     position: relative;
-    top: 125px;
+    top: 140px;
     height: 35vh;
     width: 100%;
     z-index: 1;

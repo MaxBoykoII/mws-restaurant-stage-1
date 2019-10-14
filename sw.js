@@ -1,5 +1,5 @@
 const cacheRoot = 'restaurant-reviews';
-const cacheVersion = 'v3';
+const cacheVersion = 'v5';
 const staticCacheName = `${cacheRoot}-${cacheVersion}`;
 
 console.log(`Using sw version ${staticCacheName}...`);
