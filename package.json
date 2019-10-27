@@ -1,0 +1,19 @@
+{
+  "name": "mws-restaurant-app",
+  "version": "1.0.0",
+  "description": "A progressive web app for adding restaurant reviews",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxBoykoII/mws-restaurant-stage-1.git"
+  },
+  "author": "Max Boyko <maxboykomax@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxBoykoII/mws-restaurant-stage-1/issues"
+  },
+  "homepage": "https://github.com/MaxBoykoII/mws-restaurant-stage-1#readme"
+}
